@@ -1,0 +1,16 @@
+
+    <title>{% if page.title %}{{ page.title }}{% endif %}{{ site.name }}</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} &mdash;{% endif %} {{ site.name }}"/>
+    <meta property="og:site_name" content="Hudson Marinho"/>
+    <meta property="og:url" content="{{ site.url }}{% if page.url != '/index.html' %}{{ page.url }}{% endif %}"/>
+    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}blog{% endif %}"/>
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"/>
+
+    <link rel="shortcut icon" href="{{ site.baseurl }}assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/stylesheet.css" type="text/css" />
+    <link rel="alternate" type="application/rss+xml" href="{{ site.feedburnerurl }}">
