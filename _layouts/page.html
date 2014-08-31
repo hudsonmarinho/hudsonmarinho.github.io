@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body{% if page.class %} class="body-{{ page.class }}"{% endif %} onload="prettyPrint()">
+
+    {% include header.html %}
+    <section id="main">
+      {{ content }}
+    </section>
+    {% include footer.html %}
+
+  </body>
+</html>
