@@ -1,8 +1,22 @@
 ---
-layout: page
+layout: default
 title: Blog
 class: blog
-description: blog page
+description: HTML5, CSS3, JavaScript and other front-end stuff.
 ---
 
-blog
+<div class="home">
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2><a class="post-link" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a></h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" }}">via RSS</a></p>
+</div>
