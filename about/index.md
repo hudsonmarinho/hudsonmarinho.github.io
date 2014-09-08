@@ -5,4 +5,4 @@ class: about
 description: about page
 ---
 
-about
+{{ site.about-me }}
