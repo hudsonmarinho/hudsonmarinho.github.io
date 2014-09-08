@@ -1,58 +1,26 @@
-safe:               false
-baseurl:            /
-url:                http://localhost:4000
+safe:                             false
+baseurl:                          /
+url:                              "http://localhost:4000/"
 
+# ========================================
 
-name:              Hudson Marinho
-description:       'My personal website where I talk about front-end, development like HTML5, javascript, CSS3, thoughts, projects and photography'
-url:               http://hudsonmarinho.com
-domain:            hudsonmarinho.com
-commentlinks:      true
-twitter-username:  hudsonmarinho
-feedburnerurl:     http://feeds.feedburner.com/hudsonmarinho
-google-analytics-tracking-id: UA-4005600-22
+name:                             Hudson Marinho
+description:                      "My personal website where I talk about front-end, development like HTML5, javascript, CSS3, thoughts, projects and photography"
+about-me:                         "Hi, I’m Hudson Marinho. I'm 25 year old and am front-end developer who live in Natal/RN and working for company based in SP."
+domain:                           "http://hudsonmarinho.com"
+email:                            "hudsonmarinhodev@gmail.com"
+twitter-username:                 "hudsonmarinho"
+facebook-username:                "hudson.marinho"
+feedburnerurl:                    "http://feeds.feedburner.com/hudsonmarinho"
+google-analytics-tracking-id:     "UA-4005600-22"
 
+# ========================================
 
-source:         .
-destination:    ./_site
-plugins:        ./_plugins
-# paginate_path:  'blog/page:num'
+markdown: kramdown
+paginate: 5
+permalink: blog/:year/:month/:day/:title/
+highlighter: true
 
-
-future:     true
-lsi:        false
-# pygments:   false
-markdown:   Kramdown
-permalink:  /:title/
-# paginate:   5
-
-
-maruku:
-  use_tex:     false
-  use_divs:    false
-  png_engine:  blahtex
-  png_dir:     images/latex
-  png_url:     /images/latex
-
-
-rdiscount:
-  extensions: []
-
-
-kramdown:
-  auto_ids:       true,
-  footnote_nr:    1
-  entity_output:  as_char
-  toc_levels:     1..6
-  use_coderay:    false
-
-  coderay:
-    coderay_wrap:                div
-    coderay_line_numbers:        inline
-    coderay_line_numbers_start:  1
-    coderay_tab_width:           4
-    coderay_bold_every:          10
-    coderay_css:                 style
-
+# ========================================
 
 excerpt_separator: "<!-- more -->"
