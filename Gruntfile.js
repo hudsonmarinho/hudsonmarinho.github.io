@@ -36,7 +36,7 @@ module.exports = function(grunt)
 			},
 			dist: {
 				files: {
-					'public/javascripts/app.js': [
+					'assets/javascripts/app.js': [
 						'_sources/javascripts/libs/modernizr-2.6.2.min.js',
 						'_sources/javascripts/libs/jquery-1.10.2.min.js',
             
