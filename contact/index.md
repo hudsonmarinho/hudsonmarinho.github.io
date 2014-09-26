@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Contact
-class: contact
-description: contact page
+excerpt: ""
+date:   2014-09-26 00:00:00
+image:
+  feature: so-simple-sample-image-4.jpg
 ---
-
-contact

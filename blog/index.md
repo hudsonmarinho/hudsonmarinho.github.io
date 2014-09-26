@@ -1,22 +1,11 @@
 ---
-layout: default
+layout: page
 title: Blog
-class: blog
-description: HTML5, CSS3, JavaScript and other front-end stuff.
+excerpt: "An archive of blog posts sorted by date."
 ---
 
-<div class="home">
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2><a class="post-link" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a></h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" }}">via RSS</a></p>
-</div>
+<ul class="post-list">
+{% for post in site.posts %} 
+  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
+{% endfor %}
+</ul>

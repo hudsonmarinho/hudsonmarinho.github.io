@@ -1,26 +1,55 @@
-safe:                             false
-baseurl:                          /
-url:                              "http://localhost:4000"
+# Site wide configuration
 
-# ========================================
+title: Hudson Marinho - Front end developer
+locale: en_US
+description: "Hi, I’m Hudson Marinho. I'm 25 year old and am front-end developer who live in Natal/RN and working for company based in SP."
+logo: "http://graph.facebook.com/hudsonmarinho/picture?width=300&height=300"
+search: true
+url:
 
-name:                             Hudson Marinho
-description:                      "My personal website where I talk about front-end, development like HTML5, javascript, CSS3, thoughts, projects and photography"
-about-me:                         "Hi, I’m Hudson Marinho. I'm 25 year old and am front-end developer who live in Natal/RN and working for company based in SP."
-domain:                           "http://hudsonmarinho.com"
-email:                            "hudsonmarinhodev@gmail.com"
-twitter-username:                 "hudsonmarinho"
-facebook-username:                "hudson.marinho"
-feedburnerurl:                    "http://feeds.feedburner.com/hudsonmarinho"
-google-analytics-tracking-id:     "UA-4005600-22"
 
-# ========================================
+# Jekyll configuration
 
-markdown: kramdown
-paginate: 5
-permalink: blog/:year/:month/:day/:title/
-highlighter: true
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
 
-# ========================================
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  use_coderay: false
 
-excerpt_separator: "<!-- more -->"
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+
+# Site owner
+
+owner:
+  name: Hudson Marinho
+  username: hudsonmarinho
+  avatar: "http://graph.facebook.com/hudsonmarinho/picture?width=300&height=300"
+  email: hudsonmarinhodev@gmail.com
+  disqus-shortname: hudsonmarinho
+  twitter: hudsonmarinho
+  facebook: hudsonmarinho
+  github: hudsonmarinho
+  stackexchange: http://stackoverflow.com/users/2765176/hudson-marinho
+  linkedin: hudsonmarinho
+  instagram: hudsonmarinho
+  flickr: hudsonmarinho
+  tumblr: hudsonmarinho
+  google:
+    plus: hudsonmarinhodev
+    analytics: "UA-4005600-22"
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
