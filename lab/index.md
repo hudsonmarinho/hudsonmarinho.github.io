@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Laboratory of the ideias
+title: Laboratory of ideas
 excerpt: ""
 date:   2014-09-26 00:00:00
 image:
