@@ -5,7 +5,7 @@ locale: en_US
 description: "Hi, I’m Hudson Marinho. I'm 25 year old and am front-end developer who live in Natal/RN and working for company based in SP."
 logo: "http://graph.facebook.com/hudsonmarinho/picture?width=300&height=300"
 search: true
-url:
+url: http://hudsonmarinho.github.io
 
 
 # Jekyll configuration
