@@ -83,10 +83,9 @@ activate :directory_indexes
 # end
 
 set :css_dir, 'stylesheets'
-
 set :js_dir, 'javascripts'
-
 set :images_dir, 'images'
+set :markdown_engine, :kramdown
 
 # Build-specific configuration
 configure :build do
@@ -106,4 +105,11 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-set :markdown_engine, :kramdown
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.branch = 'master'
+  deploy.build_before = true
+end
+
+activate :directory_indexes
+
