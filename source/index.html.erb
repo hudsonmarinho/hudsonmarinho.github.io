@@ -1,24 +1,41 @@
 ---
 pageable: true
-per_page: 10
+per_page: 15
 ---
-<% if paginate && num_pages > 1 %>
-  <p>Page <%= page_number %> of <%= num_pages %></p>
-
-  <% if prev_page %>
-    <p><%= link_to 'Previous page', prev_page %></p>
-  <% end %>
-<% end %>
-
 <% page_articles.each_with_index do |article, i| %>
-  <h2><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></h2>
-  <!-- use article.summary(250) if you have Nokogiri available to show just
-       the first 250 characters -->
-  <%= article.body %>
-<% end %>
+  <div class="card">
+    <div class="card__container card__container--closed">
+      <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <clipPath id="clipPath1">
+            <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
+          </clipPath>
+        </defs>
+        <image clip-path="url(#clipPath1)" width="1920" height="1200" xlink:href="/images/covers/<%= article.data.cover %>"></image>
+      </svg>
 
-<% if paginate %>
-  <% if next_page %>
-    <p><%= link_to 'Next page', next_page %></p>
-  <% end %>
+      <div class="card__content">
+        <i class="card__btn-close fa fa-times"></i>
+
+        <div class="card__caption">
+          <h2 class="card__title"><%= article.title %></h2>
+          <!-- <p class="card__subtitle">A modern day love story</p> -->
+        </div>
+
+        <div class="card__copy">
+          <!--
+          <div class="meta">
+            <img class="meta__avatar" src="img/authors/1.png" alt="author01" />
+            <span class="meta__author">Hudson Marinho</span>
+            <span class="meta__date"><%= article.date.strftime('%e/%m/%Y') %></span>
+          </div>
+          -->
+
+          <div>
+            <%= article.body %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 <% end %>
