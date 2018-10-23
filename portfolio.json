@@ -1,0 +1,56 @@
+{
+  "objects": [
+    {
+      "client": "I am action",
+      "description": "I Am Action is the first social media platform of its kind chronicling charitable impacts and promoting accountability, transparency, and economic success for nonprofit organizations.",
+      "cover": "iamaction.png",
+      "year": 2018,
+      "team": "Freelancer",
+      "type": "Front end development",
+      "url": "http://iamaction.com/",
+      "tags": {
+        "left": ["Ruby On Rails", "moutain view"],
+        "right": ["jquery", "SCSS"]
+      }
+    },
+    {
+      "client": "Givdo",
+      "description": "Givdo is an advertising platform initially built as a mobile game. I joined Givdo team after some time of development and focused my work on improving and adding new features to the platform on both backend and frontend. Today Givdo is developed by volunteers and is in early fundraising.",
+      "cover": "givdo.jpg",
+      "year": 2016,
+      "team": "Freelancer",
+      "type": "Front end development",
+      "url": "http://givdo.com/",
+      "tags": {
+        "left": ["Ionic", "SCSS"],
+        "right": ["Ruby On Rails", "API"]
+      }
+    },
+    {
+      "client": "Galatea Casa",
+      "description": "GALATEA was a model in the high movable market. It was born of a small group of lovers of design and decoration who did not settle for having to spend a fortune to furnish their homes with fantastic furniture and excellent quality or else opt for cheaper furniture but with a much lower standard",
+      "cover": "galatea.png",
+      "year": 2016,
+      "team": "Freelancer",
+      "type": "Front end development",
+      "url": "http://galateacasa.com/",
+      "tags": {
+        "left": ["AngularJS", "MongoDB"],
+        "right": ["Express", "NodeJS"]
+      }
+    },
+    {
+      "client": "BestBuild",
+      "description": "Founded in September 2009, BestBuild began its history as a residential construction company operating in Natal and metropolitan region for three years.",
+      "cover": "bestbuild.png",
+      "year": 2015,
+      "team": "Freelancer",
+      "type": "Front end development",
+      "url": "http://www.bestbuild.com.br/",
+      "tags": {
+        "left": ["Rails", "PostgreSQL"],
+        "right": ["jquery", "Sass"]
+      }
+    }
+  ]
+}
